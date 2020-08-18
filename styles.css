@@ -34,7 +34,7 @@ body {
 .content_right {
     flex: 1;
     text-align: center;
-    
+    min-width: 300px;
 }
 
 .content_right > button {
@@ -48,7 +48,6 @@ body {
     outline: none;
     box-shadow: 0px 7px rgba(116, 111, 151, 0.4);
     font-size: 14px;
-    min-width: 300px;
     cursor: pointer;
 }   
 
@@ -73,6 +72,8 @@ form input {
     font-size: 17px;
     font-weight: 550;
     outline: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 input:focus:valid{
@@ -81,6 +82,10 @@ input:focus:valid{
 
 input:focus:invalid {
     border: 1px solid red;
+}
+
+.wi {
+    width: 100%;
 }
 
 form > button {
@@ -115,13 +120,13 @@ form p a {
         background-image: url(./images/bg-intro-desktop.png);
     }
     .content_left {
-        margin: 3rem 4rem;
+        margin: 3rem 2rem;
         text-align: start;
     }
 
     .content_right {
         max-width: 500px;
-        margin: 0 auto;
+        margin: 0 1rem;
     }
 
     form {
@@ -130,7 +135,8 @@ form p a {
     }
 
     .content {
-        margin: auto 4rem;
+        max-width: 1022px;
+        margin: auto;
     }
 
     .content_left_title {
